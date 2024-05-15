@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: '木瓜的随笔小屋'
 subtitle: ''
-description: ''
+description: '一些技术研究心得，一些感悟'
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: Donald Yang
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -101,4 +101,6 @@ theme: cactus-light
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  repo: https://github.com/fforever14/fforever14.github.io
+  branch: main
