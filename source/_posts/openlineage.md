@@ -1,5 +1,5 @@
 ---
-title: openlineage-1
+title: openlineage学习（一）
 tags:
   - openlineage
   - design
@@ -21,7 +21,7 @@ OpenLineage只规范的数据血缘信息交换的格式，未对数据血缘的
 
 OpenLineage通过作业的执行信息（Run State Update）来收集和表达数据以及血缘关系数据，一个执行信息包含数据集-任务-作业三个方面，如下图所示：
 
-![OpenLineage数据血缘模型](openlineage/object-model.svg)
+![OpenLineage数据血缘模型](object-model.svg)
 
 为了能够准确的识别唯一的数据集、任务、作业信息，OpenLineage通过id进行标识，各个标识均有自己的生成方式和规则，具体请查看对应章节。对于一个系统来说，id的生成规则需要在多个系统内保持一致，或由一个统一的元数据管理系统提供，以确保在从计算引擎、存储组件等采集数据血缘的过程中，能够的到统一的标识。
 
@@ -35,7 +35,7 @@ Run State Update是OpenLineage中收集信息的载体，可以在一个作业�
 
 各个阶段的转换关系如下：
 
-![Run State Update阶段转换](openlineage/run-life-cycle.svg)
+![Run State Update阶段转换](run-life-cycle.svg)
 
 这是一个通用的阶段转换关系，在实际过程中，需要根据批/流作业的类型以及调度系统的功能特点，来确定具体使用哪些阶段。
 
